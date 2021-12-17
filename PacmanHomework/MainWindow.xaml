@@ -1,0 +1,102 @@
+﻿<Window x:Class="PacmanHomework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PacmanHomework"
+        mc:Ignorable="d"
+        Title="PacmanHomework" Height="600" Width="800">
+    <Canvas Name="MyCanvas" KeyDown="CanvasKeyDown" Focusable="True" Background="Black">
+        <Label FontSize="15" Name="Score" Foreground="White" Content="Skor: 0" />
+
+        <Rectangle Name="pacman" Width="30" Height="30" Fill="Yellow" Canvas.Left="58" Canvas.Top="74"/>
+        <Rectangle Name="kirmizi" Tag="dusman" Width="30" Height="30" Fill="Red" Canvas.Left="2" Canvas.Top="406" RenderTransformOrigin="1.244,1.626"/>
+        <Rectangle Name="turuncu" Tag="dusman" Width="30" Height="30" Fill="Orange" Canvas.Left="487" Canvas.Top="253" RenderTransformOrigin="1.244,1.626"/>
+        <Rectangle Name="pembe" Tag="dusman" Width="30" Height="30" Fill="Pink" Canvas.Left="108" Canvas.Top="169" RenderTransformOrigin="1.244,1.626"/>
+
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="30" Width="239" Canvas.Left="283" Canvas.Top="288"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="30" Width="239" Canvas.Left="283" Canvas.Top="371"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="195" Width="30" Canvas.Left="522" Canvas.Top="206"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="128" Width="30" Canvas.Left="522" Canvas.Top="12"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="73" Canvas.Top="460"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="30" Width="239" Canvas.Left="183" Canvas.Top="490"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="168" Width="30" Canvas.Left="521" Canvas.Top="406"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="708" Canvas.Top="403"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="73" Canvas.Top="287"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="624" Canvas.Top="142"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="624" Canvas.Top="403"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="73" Canvas.Top="127"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="114" Width="30" Canvas.Left="163" Canvas.Top="10"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="79" Width="30" Canvas.Left="422" Canvas.Top="10"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="30" Width="167" Canvas.Left="623" Canvas.Top="319"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="30" Width="167" Canvas.Left="624" Canvas.Top="110"/>
+        <Rectangle Tag="engel" Stroke="Green" StrokeThickness="3" Height="30" Width="196" Canvas.Left="217" Canvas.Top="206"/>
+
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="27" Canvas.Top="460"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="27" Canvas.Top="507"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="487" Canvas.Top="20"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="300" Canvas.Top="339"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="487" Canvas.Top="339"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="374" Canvas.Top="263"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="390" Canvas.Top="339"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="395" Canvas.Top="20"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="395" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="333" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="758" Canvas.Top="72"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="675" Canvas.Top="426"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="390" Canvas.Top="339"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="287" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="583" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="333" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="27" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="237" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="27" Canvas.Top="460"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="390" Canvas.Top="450"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="634" Canvas.Top="72"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="758" Canvas.Top="164"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="442" Canvas.Top="263"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="691" Canvas.Top="164"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="390" Canvas.Top="339"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="696" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="675" Canvas.Top="485"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="583" Canvas.Top="421"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="639" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="583" Canvas.Top="490"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="758" Canvas.Top="548"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="232" Canvas.Top="20"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="691" Canvas.Top="72"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="305" Canvas.Top="20"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="343" Canvas.Top="450"/>
+        <Rectangle Tag="altin" Height="10" Width="10" Fill="Gold" Canvas.Left="302" Canvas.Top="263"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Canvas>
+</Window>
